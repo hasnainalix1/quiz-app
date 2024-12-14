@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App </title>
+    <link rel="stylesheet" href="html.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    
+
+    <a href="https://github.com/hasnainalix1" target="_blank" class="github-link">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+    <div class="main-wrapper">
+        <button class="start-quiz-btn">Start Quiz</button>
+        <div class="container">
+            <div class="quiz-top-bar">
+                <span class="no-of-ques">1 of 10 Question</span>
+                <div class="clock">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>100</span>
+                </div>
+                <div class="timer-progress-bar"></div>
+            </div>
+            <div class="ques-box"></div>
+            <div class="option-box"></div>
+            <button class="next-ques-btn">Next <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <div class="result-box">
+            <i class="fa-solid fa-crown"></i>
+            <span>You've completed the Quiz</span>
+            <div class="score">
+                <span>Congrates! You Score 3 out of 5 &#128293;</span>
+            </div>
+            <button class="replay">Play again</button>
+        </div>
+    </div>
+
+<div id="toggle">
+    <i class="indicator"></i>
+</div>
+
+<script src="html.js"></script>
+
+<script>
+    var body = document.querySelector('body')
+    var toggle = document.getElementById('toggle');
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        body.classList.toggle('active');
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
